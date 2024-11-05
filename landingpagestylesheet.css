@@ -1,0 +1,239 @@
+html {
+    font-size: 16px;
+    font-family: Oxanium;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*Header Styling*/
+
+#headercontainer {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    opacity: 1;
+    background-color: black;
+    border-bottom: solid 2px white;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 3px 2px 5px black;
+}
+
+#logoimg {
+    height: 100px;
+}
+
+li {
+    list-style: none;
+    text-decoration: underline;
+}
+
+#headercontainer a {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 1px black;
+}
+
+#headercontainer a:hover {
+    color: rgb(246, 255, 0);
+}
+
+/* Mission Statement Styling */
+
+#missionstatementcontainer {
+    background-image: url(/images/headerimg.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.missionstatementtitle {
+    background-color: rgba(1, 1, 1, 0.75);
+    font-size: 3.5rem
+}
+
+article {
+    background-color: rgba(1, 1, 1, 0.75);
+    font-size: 1.5rem;
+}
+
+/* Member Panel Styling */
+
+#memberpanelgrid {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 330px;
+    border: solid 1px white;
+}
+
+.memberpanel {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+#batmanpanel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(/images/batmanemblem.PNG);
+    background-position: center;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: solid 5px white;
+}
+
+#batmanpanel:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+#flashpanel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(/images/flashemblem.PNG);
+    background-position: center;
+    height: 100%;
+    border: solid 5px rgb(255, 255, 255);
+}
+
+#flashpanel:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+#supermanpanel {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url(/images/supermanemblem.PNG);
+    background-position: center;
+    height: 100%;
+    border: solid 5px rgb(255, 255, 255);
+}
+
+#supermanpanel:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+#greenlanternpanel {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url(/images/greenlanternemblem.PNG);
+    background-position: center;
+    height: 100%;
+    border: solid 5px rgb(255, 255, 255);
+}
+
+#greenlanternpanel:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+#aquamanpanel {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-image: url(/images/aquamanemblem.PNG);
+    background-position: center;
+    height: 100%;
+    border: solid 5px rgb(255, 255, 255);
+}
+
+#aquamanpanel:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+.hiddenpanelinfo {
+    margin: 5px 5px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.memberpanel h3 {
+    text-decoration: underline;
+    text-shadow: 2px 3px black;
+}
+
+.memberpanel p {
+    font-size: 1rem;
+    display: none;
+}
+
+.memberpanel:hover h3,
+.memberpanel:hover p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.memberpanel:hover p {
+    color:rgb(255, 255, 255);
+    text-decoration: solid;
+    font-weight:bolder;
+}
+
+/* Jurisdiction Styling */
+
+#locationcontainer {
+    display: block;
+    width: 90%;
+    background-image: linear-gradient(to bottom right, purple, black);
+    margin: auto;
+    border: double 5px white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.galaxycontainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.galaxycontainer img {
+    width: 50%;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.galaxycontainer h3 {
+    font-size: 4rem;
+}
+
+#locationcontainer h2 {
+    text-decoration: underline;
+}
+
+/* Footer Styline */
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0.75rem;
+    justify-content: space-between
+
+}
